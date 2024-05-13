@@ -1,0 +1,54 @@
+<html>
+    <head>
+       <title>App Minha selfie</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="webcamjs/webcam.min.js"></script>
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="link" download="myself.png"></a>
+        <h1>App Selfie por voz 
+            <img src="robo-removebg-preview.png" id="logo_img">
+        </h1>
+        <hr>
+        <h4 style="color:red;">Pressione permitir assim que o pop-up for exibido. Depois de dar um comando de voz</h4>
+        
+        <div class="form-group">
+            <h3>Diga "Tire minha selfie"</h3>
+            <label>Sua saída de voz : </label>
+            <textare id="Mensagem" cols="30" rows="10" class="form-control" readonly="true"></textarea>
+        </div>
+
+        <p>Pressione o botão Iniciar</p>
+        <button class="btn btn-info" onclick="start()">START</button>
+        <br>
+        <label>Sua webcam : </label>
+        <div id="camera"></div>
+        <br>
+
+        <label>Suas selfies serão exibidas aqui: </label>
+        <div id="result_1">
+            <img style="width: 250px;" src="https://s2-glamour.glbimg.com/8HurUNRdQsp9jc9MKhHw3-TxOws=/0x0:607x426/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_ba3db981e6d14e54bb84be31c923b00c/internal_photos/bs/2021/f/Y/XSA1C1TdeKd4FdMontGQ/2020-10-06-camera-analogica.jpg" alt="">
+        </div>
+        <br>
+        <div id="result_2">
+            <img style="width: 250px;" src="https://s2-glamour.glbimg.com/8HurUNRdQsp9jc9MKhHw3-TxOws=/0x0:607x426/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_ba3db981e6d14e54bb84be31c923b00c/internal_photos/bs/2021/f/Y/XSA1C1TdeKd4FdMontGQ/2020-10-06-camera-analogica.jpg" alt="">
+        </div>
+        <br>
+        <div id="result_3">
+            <img style="width: 250px;" src="https://s2-glamour.glbimg.com/8HurUNRdQsp9jc9MKhHw3-TxOws=/0x0:607x426/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_ba3db981e6d14e54bb84be31c923b00c/internal_photos/bs/2021/f/Y/XSA1C1TdeKd4FdMontGQ/2020-10-06-camera-analogica.jpg" alt="">
+        </div>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
